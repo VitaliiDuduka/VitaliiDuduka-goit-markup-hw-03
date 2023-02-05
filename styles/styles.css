@@ -11,11 +11,6 @@
   overflow: hidden;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  color: #434455;
-}
-
 :root {
   --background-color: #2e2f42;
   --accent-color: #404bbf;
@@ -26,6 +21,35 @@ body {
   --btn-accent-color: #404bbf;
 }
 
+h1,
+h2,
+h3,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #434455;
+}
+
 .link {
   text-decoration: none;
 }
@@ -34,13 +58,23 @@ body {
   list-style: none;
 }
 
+.container {
+  width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 /* HEADER  */
 
 .header {
   background-color: var(--header-color);
+  display: flex;
+  height: 72px;
 }
 
 .header-nav {
+  display: flex;
+  margin-left: 156px;
 }
 
 .logo-studio {
@@ -60,9 +94,13 @@ body {
 }
 
 .header-list {
+  display: flex;
+  padding-top: 24px;
+  margin-left: 36px;
 }
 
 .header-item {
+  padding-left: 40px;
 }
 
 .header-link {
@@ -84,12 +122,16 @@ body {
 
 .header-address {
   font-style: normal;
+  padding-top: 24px;
 }
 
 .header-adr-list {
+  display: flex;
+  margin-left: 332px;
 }
 
 .header-adr-item {
+  padding-right: 40px;
 }
 
 .header-adr-link {
@@ -107,15 +149,21 @@ body {
 
 .main-hero {
   background-color: var(--background-color);
+  width: 1470px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-hero-slogan {
   font-weight: 700;
   font-size: 56px;
   line-height: calc(60 / 56);
-  text-align: center;
   letter-spacing: 0.02em;
   color: var(--main-hero-color);
+  width: 504px;
+  height: 120px;
 }
 
 .main-btn {
@@ -123,11 +171,10 @@ body {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(24 / 16);
-  display: flex;
-  align-items: center;
+  /* align-items: center; */
+  /* justify-items: center; */
   letter-spacing: 0.04em;
   color: var(--main-hero-color);
-  cursor: pointer;
   font-family: inherit;
 }
 
@@ -138,7 +185,18 @@ body {
 
 /* MAIN OUR STRENTH */
 
+.our-strenth {
+  margin-top: 113px;
+}
+
 .main-strenth {
+  display: flex;
+  width: 1128px;
+  height: 104px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  gap: 24px;
 }
 
 .main-strenth-list {
@@ -150,6 +208,7 @@ body {
   line-height: calc(24 / 20);
   letter-spacing: 0.02em;
   color: var(--background-color);
+  margin-bottom: 8px;
 }
 
 .main-strenth-text {
@@ -160,6 +219,15 @@ body {
 
 /* MAIN WHAT WE ARE DOING */
 
+.what-doing {
+  width: 1128px;
+  height: 412px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 113px;
+  margin-bottom: 120px;
+}
+
 .main-doing {
   font-weight: 700;
   font-size: 36px;
@@ -168,9 +236,13 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--background-color);
+  margin-bottom: 72px;
 }
 
 .main-doing-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
 
 .main-doing-item {
@@ -180,6 +252,7 @@ body {
 
 .team-section {
   background-color: var(--team-section-color);
+  height: 732px;
 }
 
 .team {
@@ -190,6 +263,14 @@ body {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: var(--background-color);
+  padding-top: 120px;
+  margin-bottom: 72px;
+}
+
+.team-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
 }
 
 .team-list {
@@ -202,6 +283,7 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--background-color);
+  margin-top: 32px;
 }
 
 .team-list-text {
@@ -209,12 +291,21 @@ body {
   line-height: calc(24 / 16);
   text-align: center;
   letter-spacing: 0.02em;
+  margin-top: 8px;
 }
 
 /* FOOTER */
 
 .footer {
   background-color: var(--background-color);
+  height: 310px;
+}
+
+.footer-combi {
+  width: 420px;
+  height: 110px;
+  padding-top: 100px;
+  padding-left: 156px;
 }
 
 .footer-slogan {
@@ -222,6 +313,7 @@ body {
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
   color: var(--footer-slogan-color);
+  margin-top: 16px;
 }
 
 .logo-studio-white {
@@ -248,7 +340,6 @@ body {
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--logo-web-color);
-  cursor: pointer;
   font-family: inherit;
 }
 .portf-btn:hover,
