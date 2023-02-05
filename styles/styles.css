@@ -64,6 +64,33 @@ body {
   margin-left: auto;
 }
 
+.container-portfolio {
+  width: 1140px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 120px;
+}
+
+.project-section {
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.project-title {
+  margin-top: 32px;
+  padding-left: 16px;
+  margin-bottom: 8px;
+}
+
+.project-text {
+  padding-left: 16px;
+}
+
+.project-list {
+  border: 1px solid #e7e9fc;
+}
+
 /* HEADER  */
 
 .header {
@@ -178,7 +205,7 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   position: absolute;
-  width: 172.52px;
+  min-width: 172.52px;
   height: 56px;
   left: 731.25px;
   top: 435px;
