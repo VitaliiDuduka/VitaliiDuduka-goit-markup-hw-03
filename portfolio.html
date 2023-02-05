@@ -11,12 +11,17 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.css"
+    />
+
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
 
   <body>
     <!-- Header -->
-    <header class="portofolio">
+    <header class="header border container">
       <nav class="header-nav">
         <a class="logo-studio link" href="./index.html">
           <span class="logo-web">Web</span>
@@ -27,7 +32,9 @@
             <a class="header-link link" href="./index.html">Studio</a>
           </li>
           <li class="header-item list">
-            <a class="header-link link current" href="./portfolio.html">Portfolio</a>
+            <a class="header-link link current" href="./portfolio.html"
+              >Portfolio</a
+            >
           </li>
           <li class="header-item list">
             <a class="header-link link" href="">Contacts</a>
@@ -50,10 +57,10 @@
       </address>
     </header>
     <main>
-      <section class="project-section>
+      <section>
         <h1 class="visually-hidden">Portfolio</h1>
         <!-- Menu buttons -->
-        <ul>
+        <ul class="menu-buttons">
           <li class="menu-btn list">
             <button class="portf-btn" type="button">All</button>
           </li>
@@ -72,8 +79,8 @@
         </ul>
       </section>
       <!-- Projects list -->
-      <section class="project-section">
-        <ul>
+      <section>
+        <ul class="project-section">
           <li class="project-list list">
             <img
               src="./images/portfolio/banking-app.jpg"
@@ -168,15 +175,17 @@
       </section>
     </main>
     <!-- Footer -->
-    <footer class="footer">
-      <a class="logo-studio-white link" href="./index.html">
-        <span class="logo-web">Web</span>
-        Studio
-      </a>
-      <p class="footer-slogan">
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
+    <footer class="footer container">
+      <div class="footer-combi">
+        <a class="logo-studio-white link" href="./index.html">
+          <span class="logo-web">Web</span>
+          Studio
+        </a>
+        <p class="footer-slogan">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
+      </div>
     </footer>
   </body>
 </html>
